@@ -1,6 +1,6 @@
-from guessme.py import guess
+from guessme import UpDownNumber
 
-sb = guess()
+sb = UpDownNumber()
 
 def new_game(d):
 	try:

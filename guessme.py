@@ -1,5 +1,5 @@
 import random
-class guessme:
+class UpDownNumber:
 	def __init__(self):
 		self.trials = 0
 		self.secret = 0

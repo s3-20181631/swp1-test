@@ -50,4 +50,11 @@ def application(environ, start_response):
 	start_response(status, response_headers)
 
 	return [response_body]
+httpd = make_server(
+	'localhost',
+	8051,
+	application
+)
+
+httpd.serve_horever()
 
