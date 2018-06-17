@@ -9,9 +9,9 @@ class UpDownNumber:
 	def guess(self,guess_num):
 		self.trials += 1
 		if guess_num < self.secret:
-			return "HIGH"
+			return "HIGH",self.trials
 		elif guess_num > self.secret:
-			return "LOW"
+			return "LOW",self.trials
 		else:
 		
 			return "SUCCESS!!",self.trials

@@ -19,7 +19,6 @@ def guess(d):
 	except:
 		return {'code': 'error', 'msg': 'wrong guess parameter'}
 
-	result = sb.guess(guess)
-	trials = sb.trials()
+	result,trials = sb.guess(guess)
 
 	return {'code': 'success', 'result': result, 'trials': trials}
